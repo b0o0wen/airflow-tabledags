@@ -2,6 +2,8 @@
 /tabledags/bkp/
 /tabledags/.idea/
 .idea/
+.DS_Store
+/tabledags/.DS_Store
 
 
 # Byte-compiled / optimized / DLL files
