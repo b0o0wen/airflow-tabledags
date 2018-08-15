@@ -1,4 +1,5 @@
 import os
+import re
 
 
 def listAllFiles(rootdir):
@@ -12,9 +13,15 @@ def listAllFiles(rootdir):
             files.append(path)
     return files
 
+# def listAllSqlFiles(rootdir):
+#     files = listAllFiles(rootdir)
+#     sqlfiles=[]
+#     for file in files:
+#         if re.match('\..*\.(sql)$', file):
 
 
 if __name__=='__main__':
     os.chdir('/Users/xmly/airflow/dags/himalaya/scripts/')
     x =listAllFiles('./')
+    print(x[0])
     print(x)

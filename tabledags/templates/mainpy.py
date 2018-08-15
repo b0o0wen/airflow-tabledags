@@ -16,6 +16,7 @@ args = {
     'start_date': datetime.datetime(2018, 8, 4),
     'email': ['jack.wei@ximalaya.com'],
     'retries': 3,
+    'email_on_retry'：False,
     'retry_delay': datetime.timedelta(minutes=20)
 }
 
