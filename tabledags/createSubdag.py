@@ -19,14 +19,14 @@ def create(rootdir, file):
                 with open(py_path, 'w', encoding='utf-8') as f:
                     f.write(render.render(subdag_weekly.SUBDAG_STR, rootdir, core_name))
                 # 无需修改.py权限，该with open 默认为644
-                print('create subdag: ', core_name + '.py done')
+                print('    create subdag: ', core_name + '.py done')
             elif keyword1 == 'weekly7':
                 with open(py_path, 'w', encoding='utf-8') as f:
                     f.write(render.render(subdag_weekly7.SUBDAG_STR, rootdir, core_name))
-                print('create subdag: ', core_name + '.py done')
+                print('    create subdag: ', core_name + '.py done')
             elif keyword1 == 'monthly' or keyword1 == 'monthly30':
                 with open(py_path, 'w', encoding='utf-8') as f:
                     f.write(render.render(subdag_monthly.SUBDAG_STR, rootdir, core_name))
-                print('create subdag: ', core_name + '.py done')
+                print('    create subdag: ', core_name + '.py done')
             else:
                 pass

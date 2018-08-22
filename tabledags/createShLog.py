@@ -45,7 +45,7 @@ def create(rootdir, file):
 
             # 修改sh权限为755
             os.chmod(sh_path, stat.S_IRWXU | stat.S_IRGRP | stat.S_IXGRP | stat.S_IROTH | stat.S_IXOTH)
-            print('create .sh: ', core_name + '.sh done')
+            print('    create .sh: ', core_name + '.sh done')
 
         if os.path.exists(log_path):
             pass

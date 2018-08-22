@@ -8,7 +8,7 @@ import sys
 
 sys.path.append("{{rootdir}}")
 
-DAG_NAME='himalaya'
+DAG_NAME='{{mainpy}}'
 
 args = {
     'owner': 'jack',
@@ -16,7 +16,7 @@ args = {
     'start_date': datetime.datetime(2018, 8, 4),
     'email': ['jack.wei@ximalaya.com'],
     'retries': 3,
-    'email_on_retry'：False,
+    'email_on_retry':False,
     'retry_delay': datetime.timedelta(minutes=20)
 }
 

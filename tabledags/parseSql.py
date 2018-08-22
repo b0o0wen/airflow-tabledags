@@ -3,7 +3,6 @@ import re
 
 def parse(file):
     if re.match('\/.*\.(sql)$', file):
-        print('parsing ', file, ' to pg')
         with open(file, 'r', encoding='utf-8') as f:
             content = f.read()
 
@@ -30,7 +29,7 @@ def parse(file):
                 from_table = ','.join(from_table)
                 to_table = ','.join(to_table)
                 to_from_tables.append([to_table, from_table])
-
+        print('    parse ', file, ' to pg, done')
         return to_from_tables
 
 
