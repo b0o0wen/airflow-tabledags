@@ -65,10 +65,10 @@ class App(object):
         	regexp_split_to_table(from_table, ',') as from_table
         	from dw.tmplayer.hy_table_dependances
         	where to_table is not null and from_table is not null and to_table <> from_table
-        	and to_table <>'' and from_table<>'' and to_table not like '%,%'  and from_table not like '%d_00_country%'
+        	and to_table <>'' and from_table<>'' and to_table not like '%,%' 
         )a 
         WHERE to_table is not null and from_table is not null and to_table <> from_table
-        	and to_table <>'' and from_table<>''
+        	and to_table <>'' and from_table<>''  and from_table not like '%d_00_country%'
         '''
         cur.execute(sql_process)
         self.dependence = cur.fetchall()
